@@ -50,3 +50,18 @@ button{
   padding: 1%;
   color: black;
 }
+
+/* designing styles for cards */
+
+.cards{
+  width: 100%;
+  background: #DC143C;
+}
+.card{
+  background: cyan;
+  width: 50%;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+}

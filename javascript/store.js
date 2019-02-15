@@ -3,22 +3,22 @@ var career=document.getElementById('careerobject').value;
 // console.log(career);
 var name=document.getElementById('name').value;
 console.log(name);
-// var role=document.getElementById('role').values;
-// var number=document.getElementById('number').values;
-// var email=document.getElementById('email').values;
-// var degree=document.getElementById('degree').values;
-// var dcollege=document.getElementById('dcollege').values;
-// var branch=document.getElementById('branch').values;
-// var dmarks=document.getElementById('dmarks').values;
-// var idegree=document.getElementById('idegree').values;
-// var icollege=document.getElementById('icollege').values;
-// var ibranch=document.getElementById('ibranch').values;
-// var imarks=document.getElementById('imarks').values;
-// var board=document.getElementById('board').values;
-// var school=document.getElementById('school').values;
-// var medium=document.getElementById('medium').values;
-// var smarks=document.getElementById('smarks').values;
-// var skills=document.getElementById('skills').values;
+ var role=document.getElementById('role').value;
+ var number=document.getElementById('number').value;
+ var email=document.getElementById('email').value;
+ var degree=document.getElementById('degree').value;
+ var dcollege=document.getElementById('dcollege').value;
+ var branch=document.getElementById('branch').value;
+var dmarks=document.getElementById('dmarks').value;
+var idegree=document.getElementById('idegree').value;
+ var icollege=document.getElementById('icollege').value;
+ var ibranch=document.getElementById('ibranch').value;
+ var imarks=document.getElementById('imarks').value;
+ var board=document.getElementById('board').value;
+ var school=document.getElementById('school').value;
+ var medium=document.getElementById('medium').value;
+ var smarks=document.getElementById('smarks').value;
+ var skills=document.getElementById('skills').value;
 var indexedDB=window.indexedDB||window.mozIndexedDB||window.webKitIndexedDB||window.msIndexedDB;
 
 //ternary Operation
@@ -45,11 +45,40 @@ request.onsuccess=function(e){
   store.put(
     {
       co:career,
-      Name:name
+        Name:name,
+        Role:role,
+        Number:number,
+        Mail:email,
+        Education:[
+          {
+          Degree:degree,
+          Dcollege:dcollege,
+          branch:branch,
+          marks:dmarks
+
+        },
+        {
+        Degree:idegree,
+        Dcollege:icollege,
+        branch:ibranch,
+        marks:imarks
+
+      },
+      {
+      board:board,
+      school:school,
+     medium:medium,
+      marks:smarks
 
     }
+  ],
+
+      skills:skills
+
+  }
   );
 }
+
 //error
 request.onerror=function(e){
   console.log("error"+e);
