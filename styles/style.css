@@ -69,7 +69,7 @@ button{
   margin: 1%;
 }
 .left{
-  width: 80%;
+  width: 30%;
   background-color: cyan;
   box-shadow: 3px 3px 3px  3px black;
   border: 3px solid black;
@@ -80,25 +80,54 @@ button{
   background-color: cyan;
   box-shadow: 5px 5px 5px black;
   border: 3px solid black;
-  width: 80%;
+  width: 63%;
 }
 @media screen and (min-width:320px) and (max-width:480px) {
-  .cards {
+  .cards, .main {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
   }
-  .card {
+  .card , .sub{
+    width: 93%;
+
+  }
+  .career {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left {
     width: 93%;
   }
+  .right {
+    width: 93%;
+  }
+
 }
 @media screen and (min-width:481px) and (max-width:800px) {
-  .cards {
+  .cards, .main {
     display: flex;
     flex-wrap: wrap;
   }
   .card {
     width: 43%;
   }
+  .left {
+    width: 93%;
+  }
+.sub {
+  width: 93%;
+}
+.career, .main, {
+  margin-left: auto;
+  margin-right: auto;
+}
+.button{
+  margin-left: 43%;
+}
+
 }
 @media screen and (min-width:801px) and (max-width:1500px) {
   .cards {
@@ -108,4 +137,9 @@ button{
   .card {
     width: 28%;
   }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
