@@ -56,12 +56,30 @@ button{
 .cards{
   width: 100%;
   background: #DC143C;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
 }
 .card{
   background: cyan;
-  width: 50%;
+  width: 40%;
   box-shadow: 2px 2px 2px black;
   text-align: center;
   padding: 1%;
   margin: 1%;
+}
+.main{
+  display: flex;
+}
+.leftDiv{
+  width: 30%;
+  background-color: cyan;
+  border: 6px solid black;
+  box-shadow: 3px 3px 3px black;
+}
+.rightDiv{
+  margin: 1%;
+  padding: 1%;
+  background-color: cyan;
+  border: 4px solid black;
 }

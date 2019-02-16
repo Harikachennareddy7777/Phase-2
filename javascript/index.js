@@ -40,12 +40,21 @@ request.onsuccess=function(e){
       card.appendChild(image);
 
       let a=document.createElement("a");
-      a.href="index.html";
+      a.href="resume.html?Id="+getprofile[i].Id;
       card.appendChild(a);
 
       let name=document.createElement("h2");
       name.textContent=getprofile[i].Name;
       a.appendChild(name);
+
+      let number=document.createElement("h5");
+      number.textContent=getprofile[i].Number;
+      a.appendChild(number);
+
+
+      let email=document.createElement("h5");
+      email.textContent=getprofile[i].Email;
+      a.appendChild(email);
     }
   }
 }

@@ -83,4 +83,5 @@ request.onsuccess=function(e){
 request.onerror=function(e){
   console.log("error"+e);
 }
+window.open("index.html","_self");
 }
