@@ -77,11 +77,12 @@ request.onsuccess=function(e){
 
   }
   );
+  window.open("index.html","_self");
+
 }
 
 //error
 request.onerror=function(e){
   console.log("error"+e);
 }
-window.open("index.html","_self");
 }

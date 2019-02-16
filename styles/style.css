@@ -5,7 +5,7 @@ header{
   font-weight: bold;
   text-align: center;
 }
-a{
+.a{
   font-size: 63px;
   margin-left:80%;
 }
@@ -54,7 +54,7 @@ button{
 /* designing styles for cards */
 
 .cards{
-  width: 100%;
+  width: 93%;
   background: #DC143C;
   display: flex;
   flex-wrap: wrap;
@@ -68,18 +68,44 @@ button{
   padding: 1%;
   margin: 1%;
 }
-.main{
-  display: flex;
-}
-.leftDiv{
-  width: 30%;
+.left{
+  width: 80%;
   background-color: cyan;
-  border: 6px solid black;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 3px  3px black;
+  border: 3px solid black;
 }
-.rightDiv{
+.right{
   margin: 1%;
   padding: 1%;
   background-color: cyan;
-  border: 4px solid black;
+  box-shadow: 5px 5px 5px black;
+  border: 3px solid black;
+  width: 80%;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 93%;
+  }
+}
+@media screen and (min-width:481px) and (max-width:800px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 43%;
+  }
+}
+@media screen and (min-width:801px) and (max-width:1500px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 28%;
+  }
 }

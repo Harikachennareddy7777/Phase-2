@@ -47,14 +47,15 @@ request.onsuccess=function(e){
       name.textContent=getprofile[i].Name;
       a.appendChild(name);
 
-      let number=document.createElement("h5");
-      number.textContent=getprofile[i].Number;
-      a.appendChild(number);
-
-
-      let email=document.createElement("h5");
-      email.textContent=getprofile[i].Email;
-      a.appendChild(email);
+      // let number=document.createElement("h5");
+      // number.textContent=getprofile[i].Number;
+      // a.appendChild(number);
+      //
+      //
+      // let email=document.createElement("h5");
+      // email.textContent=getprofile[i].Email;
+      // a.appendChild(email);
     }
-  }
+  // }
+}
 }
